@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  frontend:
+    build:
+      context: ./SISCOM
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      VITE_BACKEND_URL: http://backend:8080
+
+  backend:
+    build:
+      context: ./ISAD2024-6J5_back
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://20.63.17.207:3306/demolocal
+      SPRING_DATASOURCE_USERNAME: Diego
+      SPRING_DATASOURCE_PASSWORD: C@ntrasena123
