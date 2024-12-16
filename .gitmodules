@@ -1,0 +1,6 @@
+[submodule "SISCOM"]
+	path = SISCOM
+	url = https://github.com/LuisFG03/SISCOM.git
+[submodule "ISAD2024-6J5_back"]
+	path = ISAD2024-6J5_back
+	url = https://github.com/romang7/ISAD2024-6J5_back.git
